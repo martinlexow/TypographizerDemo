@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		6DE875C1256E71A4007E4B2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE875C0256E71A4007E4B2A /* ContentView.swift */; };
 		6DE875C3256E71A7007E4B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE875C2256E71A7007E4B2A /* Assets.xcassets */; };
 		6DE875C6256E71A7007E4B2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE875C5256E71A7007E4B2A /* Preview Assets.xcassets */; };
+		6DE875D0256E71FF007E4B2A /* Typographizer in Frameworks */ = {isa = PBXBuildFile; productRef = 6DE875CF256E71FF007E4B2A /* Typographizer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE875D0256E71FF007E4B2A /* Typographizer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = TypographizerDemo;
+			packageProductDependencies = (
+				6DE875CF256E71FF007E4B2A /* Typographizer */,
+			);
 			productName = TypographizerDemo;
 			productReference = 6DE875BB256E71A4007E4B2A /* TypographizerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 6DE875B2256E71A4007E4B2A;
+			packageReferences = (
+				6DE875CE256E71FF007E4B2A /* XCRemoteSwiftPackageReference "Typographizer" */,
+			);
 			productRefGroup = 6DE875BC256E71A4007E4B2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DE875CE256E71FF007E4B2A /* XCRemoteSwiftPackageReference "Typographizer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frankrausch/Typographizer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DE875CF256E71FF007E4B2A /* Typographizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DE875CE256E71FF007E4B2A /* XCRemoteSwiftPackageReference "Typographizer" */;
+			productName = Typographizer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6DE875B3256E71A4007E4B2A /* Project object */;
 }
